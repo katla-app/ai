@@ -7,8 +7,8 @@ description: >-
   policy or cookie table on their site, mentions "Katla policy," "policy embed,"
   "policy.js," "KatlaPolicy," "#katla-policy," or asks to keep their cookie policy in sync
   with the cookies their site sets. Works on any site: Vite, React, Next.js, plain HTML,
-  Lovable, site builders. To install the consent banner itself, use the katla-widget or
-  katla-sdk skill.
+  Lovable, site builders. To install the consent banner itself, use the katla-widget skill
+  (katla-sdk only when the user explicitly asks for the SDK or a custom banner).
 homepage: https://docs.katla.app/policy-embed
 ---
 

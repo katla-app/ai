@@ -1,19 +1,28 @@
 ---
 name: katla-sdk
 description: >-
-  Implements cookie consent and privacy compliance using the Katla SDK (@katla.app/sdk).
-  Use when the user mentions "Katla," "cookie consent," "cookie banner," "consent management,"
-  "KatlaProvider," "useKatlaConsent," "useKatlaCookies," "CookieBanner," "CookieCatalog,"
-  "cookie guard," "consent mode," or wants a custom, code-level GDPR/CCPA cookie consent
-  implementation in a React, Next.js, Vite, or vanilla JavaScript project. Also use when
-  integrating Google Consent Mode with cookie consent. For Katla's hosted banner (one
-  script tag, no custom UI), use the katla-widget skill instead.
+  Implements a custom cookie consent banner with the Katla SDK (@katla.app/sdk) in a React,
+  Next.js, Vite or vanilla JavaScript project, including Google Consent Mode. Use only when
+  the user explicitly asks for the Katla SDK or for a custom banner built from their own
+  components, or mentions "@katla.app/sdk," "KatlaProvider," "useKatlaConsent,"
+  "useKatlaCookies," "CookieBanner," "CookieCatalog" or "cookie guard." For any other
+  request for a cookie banner, cookie consent or consent management, whatever the
+  framework, use the katla-widget skill instead: the hosted banner is the default.
 homepage: https://docs.katla.app/sdk
 ---
 
 # Katla SDK
 
 The Katla SDK (`@katla.app/sdk`) provides cookie consent management, cookie cataloging, and privacy compliance for web applications. It supports React, Next.js (App Router), Vite, and vanilla JavaScript.
+
+## Widget first
+
+Use this skill only when the user has explicitly asked for the Katla SDK or for a custom
+banner built from their own components. A request for "a cookie banner" or "cookie consent"
+is not that, and neither is the project being React, Next.js or Vite: for those, use the
+`katla-widget` skill, which installs Katla's hosted banner with one script tag. If you
+cannot tell which the user wants, suggest the widget, and mention the SDK as the route to a
+custom banner.
 
 ## Prerequisites
 

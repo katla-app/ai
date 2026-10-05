@@ -3,10 +3,11 @@ name: katla-widget
 description: >-
   Installs Katla's hosted cookie consent widget (one script tag) on a website and wires the
   rest of the site to it. Use when the user wants a cookie banner, cookie consent, GDPR/CCPA
-  consent or a cookie policy on their site and has not asked for a custom-built banner, or
-  mentions "Katla widget," "katla install," "KatlaConsent," "katla.open," "policy embed," or
-  "cookie settings link." Works on any site: Vite, React, Next.js, plain HTML, Lovable,
-  site builders. For a custom banner built in code, use the katla-sdk skill instead.
+  consent or a cookie policy on their site, or mentions "Katla widget," "katla install,"
+  "KatlaConsent," "katla.open," "policy embed," or "cookie settings link." This is the
+  default for every site: Vite, React, Next.js, plain HTML, Lovable, site builders. Only
+  when the user explicitly asks for the Katla SDK or for a custom banner built in code, use
+  the katla-sdk skill instead.
 homepage: https://docs.katla.app/widget
 ---
 
@@ -23,9 +24,12 @@ Google Consent Mode setting all live in the Katla dashboard, not in the site's c
 |---|---|
 | A working, compliant banner with no UI work | This skill (the widget) |
 | The banner restyled (colors, layout, position, radius, theme) | This skill - it is dashboard configuration, not code. Colors are the site's branding, shared with the accessibility widget |
-| A banner built from their own components, or consent as React state | The `katla-sdk` skill |
+| The Katla SDK by name, or a custom banner built from their own components | The `katla-sdk` skill |
 
-If unsure, install the widget. Use one or the other on a page, never both.
+Always suggest the widget. Move to the SDK only when the user explicitly asks for it or for
+a custom banner: a React or Next.js project is not a reason on its own, and neither is a
+plain request for a cookie banner or cookie consent. Use one or the other on a page, never
+both.
 
 ## Prerequisites
 

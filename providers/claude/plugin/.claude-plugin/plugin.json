@@ -1,7 +1,7 @@
 {
   "name": "katla",
   "displayName": "Katla",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Cookie consent and compliance from your coding agent. Connects the Katla MCP server and adds skills for installing the consent banner, the SDK, the policy page and the accessibility widget.",
   "author": {
     "name": "Katla",
