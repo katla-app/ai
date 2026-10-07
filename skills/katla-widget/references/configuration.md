@@ -216,7 +216,7 @@ You can customize the widget appearance in your site settings. Available options
 | **Position** | `top-left`, `top-right`, `bottom-left`, `bottom-right` | `bottom-right` |
 | **Theme** | `system`, `light`, `dark` | `system` |
 | **Border radius** | `0` to `10` (shown as `0` to `20px`) | `8` |
-| **Colors** | Custom hex values for primary, secondary, accent, background, foreground, muted. Set on the **Branding** page | Katla violet |
+| **Colors** | Custom hex values for primary, secondary, accent, background, foreground, muted. Set on the **Appearance** page | Katla violet |
 | **Equal buttons** | `true`, `false` | `false` |
 | **Google Consent Mode** | `enabled`, `disabled` | `disabled` |
 | **Regulation** | `auto`, `gdpr`, `ccpa` | `auto` |
@@ -227,7 +227,7 @@ You can customize the widget appearance in your site settings. Available options
 Both light and dark mode colors can be configured independently.
 
 Colors are your site's branding rather than a banner setting: they live on the site's
-**Branding** page in the dashboard, and the accessibility widget
+**Appearance** page in the dashboard, and the accessibility widget
 uses the same ones. After your site's first scan, Katla suggests a palette read from your
 homepage there, adjusted so text and buttons stay readable. Nothing changes on your site
 until you save it.

@@ -75,7 +75,7 @@ page and choose **Install widget**, which also shows a live preview.
 **Colours come from the site's branding**, not the tag. The widget fetches them from Katla
 on load: the brand's primary colour for the button, its background and text colour for the
 panel. They are the same colours as the consent banner, set with `katla_update_site_settings`
-`colors` or on the site's **Branding** page, and a change there reaches the widget without
+`colors` or on the site's **Appearance** page, and a change there reaches the widget without
 touching the tag. Both the light and dark brand colours are used: the widget follows the
 banner's theme, so with the banner on System the panel matches each visitor's light or
 dark setting. With no branding set, the widget uses Katla violet.

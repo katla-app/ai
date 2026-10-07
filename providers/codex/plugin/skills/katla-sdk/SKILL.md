@@ -192,6 +192,20 @@ KatlaConsent.isCookieAllowed('_ga');
 KatlaConsent.getRegulation(); // 'gdpr' | 'ccpa'
 ```
 
+## After publishing: scan again
+
+Katla only knows the install is live once a scan has seen the guard on the published pages,
+and any scan from before the install could not see it. End every install by asking the user
+to publish or deploy, and then to come back and ask for one more scan, for example "I have
+published. Scan {domain} with Katla again and check that the guard is working". Do not
+start it before they say the site is live: scans count against their plan.
+
+When they ask, `katla_scan_site`, then poll `katla_get_scan_status` until the newest scan is
+`completed` and read its `guard`: `status: "installed"` with `siteIdMatches: true` means the
+guard is live, `"missing"` means the published site does not carry it yet, and
+`"not_checked"` means the scan did not look, so the install is not confirmed. Pass its
+`summary` on, and tell the user which cookies the scan found.
+
 ## Google Consent Mode
 
 Read `references/google-consent-mode.md` for setup details.
