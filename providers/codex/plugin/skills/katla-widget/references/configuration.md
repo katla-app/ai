@@ -91,8 +91,8 @@ entirely:
 | Fixed language, self-hosted engine | ~452 B |
 | Fixed language, no Consent Mode | ~208 B |
 
-> A pasted copy does not update itself. Re-copy it after changing your Consent Mode setting,
-  the theme or the language. Everything else - your cookie inventory, banner appearance, the
+> A pasted copy does not update itself. Re-copy it after changing your Consent Mode setting or
+  its regional defaults, the theme or the language. Everything else - your cookie inventory, banner appearance, the
   consent records - lives in the engine, which is still fetched at runtime and stays current.
 
 ### Self-hosting
