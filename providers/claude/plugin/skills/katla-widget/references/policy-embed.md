@@ -50,6 +50,7 @@ You can apply CSS classes and inline styles to every generated HTML element by s
 | `h2` | `<h2>` headings |
 | `h3` | `<h3>` headings |
 | `p` | `<p>` paragraphs |
+| `tableWrapper` | `<div>` around each table, which scrolls sideways when the table is wider than the page |
 | `table` | `<table>` elements |
 | `thead` | `<thead>` elements |
 | `tbody` | `<tbody>` elements |
@@ -61,7 +62,7 @@ You can apply CSS classes and inline styles to every generated HTML element by s
 | `strong` | `<strong>` bold text |
 | `em` | `<em>` italic text |
 
-All keys are optional. Omitted keys produce elements with no class or style attributes.
+All keys are optional. Omitted keys produce elements with no class or style attributes, except the `tableWrapper` box: it always carries `max-width:100%; overflow-x:auto`, so on a phone a wide cookie table scrolls inside its box instead of widening the page. A `tableWrapper` style is added after those two, so it can change them.
 
 ### Using CSS classes
 

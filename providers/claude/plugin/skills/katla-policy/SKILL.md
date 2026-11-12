@@ -121,8 +121,10 @@ policy script:
 <script src="https://cdn.katla.app/{siteId}/policy.js"></script>
 ```
 
-Keys: `wrapper, h1, h2, h3, p, ul, li, table, thead, tbody, tr, th, td, strong, em`. All
-are optional. When a key has both a class and a style, both are applied.
+Keys: `wrapper, h1, h2, h3, p, ul, li, tableWrapper, table, thead, tbody, tr, th, td, strong, em`.
+All are optional. When a key has both a class and a style, both are applied. Each table already
+sits in a `tableWrapper` box that scrolls sideways on narrow screens, so there is no need to make
+the table itself scrollable.
 
 ## Step 4: Link the banner to it
 
